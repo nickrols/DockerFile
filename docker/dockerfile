@@ -12,5 +12,7 @@ RUN docker-php-ext-install pdo_mysql
 # RUN pecl install zip && docker-php-ext-enable zip
 
 # Install composer
-RUN curl -sS https://getcomposer.org/installer | php
-RUN mv composer.phar /usr/local/bin/composer
+# RUN curl -sS https://getcomposer.org/installer | php
+# RUN mv composer.phar /usr/local/bin/composer
+
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
