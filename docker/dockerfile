@@ -1,7 +1,5 @@
 FROM php:7.3-fpm
 
-# Install the PHP mcrypt extention
-RUN docker-php-ext-install mcrypt
 
 # Install the PHP pdo_mysql extention
 RUN docker-php-ext-install pdo_mysql
